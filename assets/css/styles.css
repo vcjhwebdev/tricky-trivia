@@ -18,9 +18,19 @@ h1 {
 }
 
 #categories {
-  background: linear-gradient(to bottom, orange, yellow);
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #FF9115, yellow);
 }
 
 #levels{
-  
+
 }
