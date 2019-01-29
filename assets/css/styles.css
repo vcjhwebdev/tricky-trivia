@@ -17,6 +17,7 @@ h1 {
   border-radius: 10px;
 }
 
+
 #categories {
   height: 100vh;
   position: absolute;
@@ -31,6 +32,6 @@ h1 {
   background: linear-gradient(to bottom, #FF9115, yellow);
 }
 
-#levels{
-
+#levels1{
+  
 }

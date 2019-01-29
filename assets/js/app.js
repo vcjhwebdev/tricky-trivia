@@ -1,5 +1,6 @@
 var startGame = document.querySelector('.start-game');
 var overlay = document.querySelector('#overlay');
+var levels = document.querySelector('#levels1')
 
 startGame.addEventListener('click', function(e) {
   // e.target <-- thing you clicked
@@ -7,4 +8,5 @@ startGame.addEventListener('click', function(e) {
   // e.target.textContent <-- text of thing
   // alert(e.target.value + " clicked");
   overlay.style.display = "none";
+  levels1.style.display = "none";
 });
