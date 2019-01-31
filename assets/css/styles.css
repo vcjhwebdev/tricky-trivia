@@ -17,7 +17,12 @@ h1 {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  font-family: fantasy;
+}
 
+h2 {
+  font-family: fantasy;
+  font-style: normal;
 }
 
 #categories {
@@ -31,4 +36,8 @@ h1 {
   bottom: 0;
   text-align: center;
   background: linear-gradient(to bottom, #FF6F17, yellow);
+}
+
+pre {
+  font-family: fantasy;
 }
