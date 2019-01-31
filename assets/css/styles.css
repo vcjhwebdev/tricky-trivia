@@ -15,10 +15,7 @@
 h1 {
   border-style: solid;
   border-radius: 10px;
-}
-
-h2 {
-  border-bottom: medium;
+  margin: auto;
 }
 
 #categories {
@@ -30,5 +27,5 @@ h2 {
   right: 0;
   bottom: 0;
   text-align: center;
-  background: linear-gradient(to bottom, #FF9115, yellow);
+  background: linear-gradient(to bottom, orange, yellow);
 }
