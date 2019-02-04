@@ -1,8 +1,8 @@
 var startGame = document.querySelector('.start-game');
 var overlay = document.querySelector('#overlay');
-var categories = document.querySelector('#catigories');
-var levels1 = document.querySelector('#levels1');
+var categories = document.querySelector('#categories');
 //var aeasy = document.querySelector('.aeasy');
+//var animaleasy = document.querySelector('#animaleasy1');
 
 startGame.addEventListener('click', function(e) {
   // e.target <-- thing you clicked
@@ -10,6 +10,7 @@ startGame.addEventListener('click', function(e) {
   // e.target.textContent <-- text of thing
   // alert(e.target.value + " clicked");
   overlay.style.display = "none";
-  catigories.style.display = "none";
+  // catigories.style.display = "none";
   levels1.style.display = "none";
+  animaleasy1.style.display = "none";
 });
