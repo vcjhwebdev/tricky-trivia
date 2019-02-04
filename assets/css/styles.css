@@ -1,13 +1,14 @@
+body {
+  margin: 0;
+}
+
 #overlay {
-  height: 101vh;
+  height: 100vh;
+  width: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   text-align: center;
   background: linear-gradient(to bottom, red, orange);
 }
@@ -26,18 +27,46 @@ h2 {
 }
 
 #categories {
-  height: 99vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   text-align: center;
   background: linear-gradient(to bottom, #FF6F17, yellow);
 }
 
 pre {
   font-family: fantasy;
+}
+
+.start-game {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: fantasy;
+  font-size: 15px;
+}
+
+.easy {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: fantasy;
+  font-size: 14px;
+}
+
+.medium {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: fantasy;
+  font-size: 14px;
+}
+
+.hard {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: fantasy;
+  font-size: 14px;
 }
