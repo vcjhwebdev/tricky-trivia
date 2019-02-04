@@ -19,13 +19,16 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   font-family: fantasy;
-  font-size: 35px;
+  font-size: 38px;
 }
 
 h2 {
   font-family: fantasy;
   font-style: normal;
   border-bottom: solid;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
 }
 
 h3 {
@@ -34,7 +37,13 @@ h3 {
   font-size: 20px;
 }
 
-#categories {
+h4 {
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 15px;
+}
+
+/* #categories {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,12 +52,7 @@ h3 {
   background: linear-gradient(to bottom, #FF6F17, yellow);
 }
 
-pre {
-  font-family: fantasy;
-}
-
-
-.start-game {
+ .start-game {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 4px;
@@ -62,20 +66,9 @@ pre {
   border-radius: 4px;
   font-family: fantasy;
   font-size: 14px;
-}
+} */
 
-.medium {
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 4px;
+label {
   font-family: fantasy;
-  font-size: 14px;
-}
 
-.hard {
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-family: fantasy;
-  font-size: 14px;
 }
