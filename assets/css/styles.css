@@ -19,11 +19,19 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   font-family: fantasy;
+  font-size: 35px;
 }
 
 h2 {
   font-family: fantasy;
   font-style: normal;
+  border-bottom: solid;
+}
+
+h3 {
+  font-family: fantasy;
+  font-style: normal;
+  font-size: 20px;
 }
 
 #categories {
@@ -38,6 +46,7 @@ h2 {
 pre {
   font-family: fantasy;
 }
+
 
 .start-game {
   background-color: transparent;
