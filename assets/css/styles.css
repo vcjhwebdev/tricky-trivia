@@ -70,5 +70,13 @@ h4 {
 
 label {
   font-family: fantasy;
+  cursor: pointer;
+}
 
+input[type=radio] + label {
+    cursor: pointer;
+}
+
+input[type=radio] {
+  visibility: hidden;
 }
