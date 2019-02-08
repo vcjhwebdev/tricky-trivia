@@ -14,7 +14,8 @@
 //});
 //});
 if (easy1 == "cat")
-  {alert("Yes!!! You got the right answer!!!");}
+  {alert(confirm("Yes!!! You got the right answer!!! Click "));
+    if (confirm == )}
 else if (easy1 == "dog")
   {alert("Try Again");}
 else if (easy1 == "lizard")
