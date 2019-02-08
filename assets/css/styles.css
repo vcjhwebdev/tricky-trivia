@@ -58,7 +58,7 @@ label:hover {
 }
 
 
-label:down {
+input[type=radio]:checked + label {
     background-color: white;
     color:black;
 }
@@ -68,10 +68,12 @@ input[type=radio] + label {
 }
 
 input[type=radio] {
-  visibility: hidden;
+  display: none;
+
 }
 
-.next {
+
+.start {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 4px;
@@ -81,7 +83,7 @@ input[type=radio] {
   margin-right: 100px;
 }
 
-.next:hover {
+.start:hover {
   background-color:white;
   color:black;
 }
