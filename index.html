@@ -10,25 +10,26 @@
     <div id="main-container">
       <div id="overlay">
         <h1>Tricky Trivia</h1>
-            <h2>Categories</h2>
-              <br>
+            <form>
+              <legend>Categories</legend>
               <input id="levels1" type="radio" name="categories" value="animal" checked>
-                    <label class="setting" for="animal"><h3>Animal</h3></label>
-              <input id="levels2" type="radio" name="categories" value="food" checked>
-                    <label class="setting" for="food"><h3>Food</h3></label>
-              <input id="levels3" type="radio" name="categories" value="movies" checked>
-                    <label class="setting" for="movies"><h3>Movies</h3></label>
-                        <h2>Levels</h2>
-                        <input id="easy" type="radio" name="animal" value="easy" checked>
-                          <label for="easy"><h3>Easy</h3></label>
-                        <input id="medium" type="radio" name="animal" value="medium" checked>
-                          <label for="medium"><h3>Medium</h3></label>
-                        <input id="hard" type="radio" name="animal" value="hard" checked>
-                          <label for="hard"><h3>Hard</h3></label><br>
-            <div id="nextpage">
-              <input class="next" type="button" name ="next" value="Next">
-            </div>
+                    <label class="setting" for="animal">Animal</label>
+              <input id="levels2" type="radio" name="categories" value="food">
+                    <label class="setting" for="food">Food</label>
+              <input id="levels3" type="radio" name="categories" value="movies">
+                    <label class="setting" for="movies">Movies</label>
+              <legend>Levels</legend>
+              <input id="easy" type="radio" name="animal" value="easy" checked>
+                <label for="easy">Easy</label>
+              <input id="medium" type="radio" name="animal" value="medium">
+                <label for="medium">Medium</label>
+              <input id="hard" type="radio" name="animal" value="hard">
+                <label for="hard">Hard</label><br>
+              <button class="start" type="submit">Start</button>
+            </form>
 
+      </div>
+      <div id="game">
       </div>
     </div>
 

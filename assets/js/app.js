@@ -13,18 +13,3 @@
   //animaleasy1.style.display = "none";
 //});
 //});
-
-
-var next = document.querySelector('.next')
-var nextpage = document.querySelector('#nextpage')
-var aeasy = document.querySelector('.animal'+'.easy');
-
-next.addEventListener('click', function(e){
-  nextpage.style.display = "none";
-        //if (categories == animal)
-          //{alert("Do you like animals");}
-  aeasy.style.display = "none" {
-    {alert("HEy");}
-  };
-
-});
