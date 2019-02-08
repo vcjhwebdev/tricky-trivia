@@ -19,7 +19,8 @@ h1 {
   margin-left: 200px;
   margin-right: 200px;
   font-family: fantasy;
-  font-size: 36px;
+  font-size: 40px;
+  padding-top: 8px;
 }
 
 h2 {
@@ -47,9 +48,9 @@ label {
   font-family: fantasy;
   cursor: pointer;
   border: 2px solid black;
-  margin-left: 300px;
-  margin-right: 300px;
+  font-size: 20px;
   border-radius: 4px;
+  padding: 4px;
 }
 
 label:hover {
@@ -72,13 +73,12 @@ input[type=radio] {
 
 }
 
-
 .start {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 4px;
   font-family: fantasy;
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -86,4 +86,12 @@ input[type=radio] {
 .start:hover {
   background-color:white;
   color:black;
+}
+
+legend {
+  font-family: fantasy;
+  font-size: 28px;
+  border-bottom: 3px solid black;
+  margin-left: 270px;
+  margin-right: 270px;
 }
