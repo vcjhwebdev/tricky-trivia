@@ -13,3 +13,9 @@
   //animaleasy1.style.display = "none";
 //});
 //});
+if (easy1 == "cat")
+  {alert("Yes!!! You got the right answer!!!");}
+else if (easy1 == "dog")
+  {alert("Try Again");}
+else if (easy1 == "lizard")
+  {alert("Try Again");}
