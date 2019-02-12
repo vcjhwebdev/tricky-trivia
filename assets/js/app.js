@@ -1,8 +1,3 @@
-//var startGame = document.querySelector('.start-game');
-
-//var categories = document.querySelector('#categories');
-//var animaleasy = document.querySelector('#animaleasy1');
-
 //startGame.addEventListener('click', function(e) {
   // e.target <-- thing you clicked
   // e.target.value <-- value attribute
@@ -13,6 +8,8 @@
   //animaleasy1.style.display = "none";
 //});
 //});
+
+var overlay = document.getElementById('overlay');
 
 var settingsForm = document.getElementById('settings');
 
@@ -32,7 +29,7 @@ settingsForm.addEventListener('submit', function(event) {
   } else if(food.checked){
     category = "food";
   } else if(movies.checked){
-    category= = "movies";
+    category = "movies";
   }
 
   if(easy.checked) {
@@ -40,8 +37,10 @@ settingsForm.addEventListener('submit', function(event) {
   } else if(medium.checked){
     difficulty = "medium";
   } else if(hard.checked){
-    difficulty= = "hard";
+    difficulty = "hard";
   }
+
+  overlay.style.display = "none";
 
 });
 //
