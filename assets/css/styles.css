@@ -108,3 +108,14 @@ legend {
 #settings label {
   margin: 16px 0;
 }
+
+#game {
+  background: linear-gradient(to bottom, #FF6F17, #FFD816);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
