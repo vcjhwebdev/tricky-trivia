@@ -6,6 +6,7 @@ body {
   height: 100vh;
   width: 100%;
   position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +73,6 @@ input[type=radio] + label {
 
 input[type=radio] {
   display: none;
-
 }
 
 .start {
@@ -82,6 +82,7 @@ input[type=radio] {
   font-family: fantasy;
   font-size: 16px;
   padding-top: 4px;
+  width: 110px;
 }
 
 .start:hover {
@@ -96,4 +97,14 @@ legend {
   box-sizing: border-box;
   width: 200px;
   margin: auto;
+}
+
+#settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#settings label {
+  margin: 16px 0;
 }
