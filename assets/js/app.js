@@ -9,6 +9,36 @@
 //});
 //});
 
+var questions = [
+  {
+    text: 'What type of animal is a cheetah?',
+    options: [
+      'Cat',
+      'Dog',
+      'Lizard'
+    ],
+    answer: 'Cat'
+  },
+  {
+    text: 'How many legs does a standard dog have?',
+    options: [
+      '2',
+      '3',
+      '4'
+    ],
+    answer: '4'
+  },
+  {
+    text: "Which bird is known for imitating sounds of humans?",
+    options:[
+      'Chicken',
+      'Parrot',
+      'Duck'
+    ],
+    answer: 'Parrot'
+  }
+];
+
 var overlay = document.getElementById('overlay');
 
 var settingsForm = document.getElementById('settings');
@@ -42,4 +72,22 @@ settingsForm.addEventListener('submit', function(event) {
 
   overlay.style.display = "none";
 
+  // start the game
+  startGame(category, difficulty);
+
 });
+
+function startGame(category, difficulty) {
+
+  var label = document.querySelector('.question-label');
+  var text = document.querySelector('.question-text');
+  var answer = document.querySelectorall('.answer')
+
+  // console.log(category, difficulty);
+
+  // choose random question object
+  var question = questions[Math.floor(Math.random() * questions.length)];
+  // console.log(question);
+
+  // place question on the page
+}
