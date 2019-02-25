@@ -119,3 +119,21 @@ legend {
   justify-content: center;
   text-align: center;
 }
+
+#game button {
+  margin: 10px 0;
+}
+
+button {
+  font-family: fantasy;
+  background-color: transparent;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding-top: 5px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
