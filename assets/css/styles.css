@@ -137,3 +137,7 @@ button:hover {
   background-color: white;
   color: black;
 }
+
+.question-label::before {
+  content: "Question ";
+}
