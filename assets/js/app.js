@@ -43,11 +43,3 @@ settingsForm.addEventListener('submit', function(event) {
   overlay.style.display = "none";
 
 });
-//
-// if (easy1 == "cat")
-//   {alert(confirm("Yes!!! You got the right answer!!! Click "));
-//     if (confirm == )}
-// else if (easy1 == "dog")
-//   {alert("Try Again");}
-// else if (easy1 == "lizard")
-//   {alert("Try Again");}
