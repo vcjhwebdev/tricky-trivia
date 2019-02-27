@@ -1,14 +1,3 @@
-//startGame.addEventListener('click', function(e) {
-  // e.target <-- thing you clicked
-  // e.target.value <-- value attribute
-  // e.target.textContent <-- text of thing
-  // alert(e.target.value + " clicked");  overlay.style.display = "none";
-  // catigories.style.display = "none";
-  //levels1.style.display = "none";
-  //animaleasy1.style.display = "none";
-//});
-//});
-
 var questions = [
   {
     text: 'What type of animal is a cheetah?',
@@ -38,6 +27,7 @@ var questions = [
     answer: 'Parrot'
   }
 ];
+var questionNumber = 1;
 
 var overlay = document.getElementById('overlay');
 
@@ -81,13 +71,24 @@ function startGame(category, difficulty) {
 
   var label = document.querySelector('.question-label');
   var text = document.querySelector('.question-text');
-  var answer = document.querySelectorall('.answer')
+  var answer = document.querySelectorAll('.answer')
 
   // console.log(category, difficulty);
-
+  var index = Math.floor(Math.random() * questions.length);
   // choose random question object
-  var question = questions[Math.floor(Math.random() * questions.length)];
-  // console.log(question);
+  var question = questions[index];
+  console.log(question);
+  console.log(label);
+  console.log(answer);
 
   // place question on the page
+  label.textContent = questionNumber;
+  text.textContent = question.text;
+  
+
+  //for() {
+    //question.options[]
+//  }
+
+  questionNumber++;
 }
