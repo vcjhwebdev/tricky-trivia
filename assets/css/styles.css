@@ -81,7 +81,6 @@ input[type=radio] {
   border-radius: 4px;
   font-family: fantasy;
   font-size: 16px;
-  padding-top: 4px;
   width: 110px;
 }
 
@@ -140,4 +139,46 @@ button:hover {
 
 .question-label::before {
   content: "Question ";
+}
+
+
+/* =================================
+Device width:
+    <-- 320px
+==================================== */
+@media (max-width: 320px) {
+  #overlay {
+    height: 100%;
+  }
+  h1 {
+    width: 90%;
+    margin: 8px auto;
+  }
+  #settings label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+  legend {
+    width: 60%;
+    font-size: 26px;
+    margin: 6px;
+}
+  label {
+    font-size: 18px;
+}
+  .start {
+    width: 40%;
+    margin-top: 6px;
+  }
+/* =================================
+Device width:
+    768px -->   <-- 1024px
+==================================== */
+@media (min-width: 768px) {
+}
+/* =================================
+Device width:
+    1024px -->
+==================================== */
+@media (min-width: 1024px) {
 }
