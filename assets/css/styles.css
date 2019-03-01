@@ -54,7 +54,7 @@ label {
   font-family: fantasy;
   cursor: pointer;
   border: 2px solid black;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
   padding: 4px;
 }
@@ -86,6 +86,7 @@ input[type=radio] {
   font-size: 16px;
   width: 40%;
   height: auto;
+  margin-top: 18px;
 }
 
 .start:hover {
@@ -99,7 +100,7 @@ legend {
   border-bottom: 3px solid black;
   box-sizing: border-box;
   width: 40%;
-
+  margin: 12px;
 }
 
 #settings {
@@ -160,22 +161,24 @@ Device width:
     margin: 1px auto;
     font-size: 36px;
     text-align: center;
+    border-width: 3px;
 }
   #settings label {
     margin-top: 4px;
     margin-bottom: 4px;
 }
   legend {
-    width: 60%;
+    width: 50%;
     font-size: 24px;
     margin: 6px;
+    border-width: 2px;
 }
   label {
     font-size: 16px;
 }
   .start {
     width: 40%;
-    margin-top: 6px;
+    margin-top: 8px;
   }
 }
 /* =================================
@@ -207,4 +210,22 @@ Device width:
     1024px -->
 ==================================== */
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 66px;
+    border-width: 5px;
+  }
+  legend {
+    font-size: 46px;
+    border-width: 4px;
+  }
+  label {
+    font-size: 32px;
+    border-width: 3px;
+    padding: 6px;
+  }
+  .start {
+    font-size: 30px;
+    border-width: 3px;
+    margin-top: 48px;
+  }
 }
