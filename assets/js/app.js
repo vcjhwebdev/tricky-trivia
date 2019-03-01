@@ -1,32 +1,57 @@
-var questions = [
-  {
-    text: 'What type of animal is a cheetah?',
-    options: [
-      'Cat',
-      'Dog',
-      'Lizard'
+var questions = {
+  animal: {
+    easy: [
+      {
+        text: 'What type of animal is a cheetah?',
+        options: [
+          'Cat',
+          'Dog',
+          'Lizard'
+        ],
+        answer: 'Cat'
+      },
+      {
+        text: 'How many legs does a standard dog have?',
+        options: [
+          '2',
+          '3',
+          '4'
+        ],
+        answer: '4'
+      },
+      {
+        text: "Which bird is known for imitating sounds of humans?",
+        options: [
+          'Chicken',
+          'Parrot',
+          'Duck'
+        ],
+        answer: 'Parrot'
+      }
     ],
-    answer: 'Cat'
-  },
-  {
-    text: 'How many legs does a standard dog have?',
-    options: [
-      '2',
-      '3',
-      '4'
-    ],
-    answer: '4'
-  },
-  {
-    text: "Which bird is known for imitating sounds of humans?",
-    options:[
-      'Chicken',
-      'Parrot',
-      'Duck'
-    ],
-    answer: 'Parrot'
+    medium: [
+      {
+        text: "What color are a zebra's stripes?",
+        options: [
+          'White',
+          'Black',
+          'Both'
+        ],
+        answer: 'White'
+      },
+      {
+        text: 'How many times may a salamander regrow its tail?',
+        options: [
+          '1',
+          '10',
+          'Infinite'
+        ],
+        answer: 'Infinite'
+      },
+
+    ]
   }
-];
+};
 var questionNumber = 1;
 
 var overlay = document.getElementById('overlay');
@@ -66,29 +91,29 @@ settingsForm.addEventListener('submit', function(event) {
   startGame(category, difficulty);
 
 });
-
+// question.animals
+// question[category]
 function startGame(category, difficulty) {
 
   var label = document.querySelector('.question-label');
   var text = document.querySelector('.question-text');
-  var answer = document.querySelectorAll('.answer')
+  var answers = document.querySelectorAll('.answer')
 
-  // console.log(category, difficulty);
-  var index = Math.floor(Math.random() * questions.length);
+  //console.log(category, difficulty);
+  var index = Math.floor(Math.random() * questions[category][difficulty].length);
   // choose random question object
-  var question = questions[index];
+  var question = questions[category][difficulty][index];
   console.log(question);
-  console.log(label);
-  console.log(answer);
+  //console.log(label);
+  //console.log(answer);
 
   // place question on the page
   label.textContent = questionNumber;
   text.textContent = question.text;
-  
 
-  //for() {
-    //question.options[]
-//  }
+  for(var i = 0; i < question.options.length; i++) {
+    answers[i].textContent = question.options[i]; // 'Cat' // 'Dog' // 'Lizard'
+  }
 
   questionNumber++;
 }
