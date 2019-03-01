@@ -48,8 +48,60 @@ var questions = {
         ],
         answer: 'Infinite'
       },
+      {
+        text: 'A dove is the universal symbol for what?',
+        options: [
+          'Music and Dance',
+          'Love and Peace',
+          'Laughter and Trust'
+        ],
+        answer: 'Love and Peace'
+      }
 
+    ],
+    hard: [
+      {
+        text: "What color is a giraffe's tounge?",
+        options: [
+          'Red',
+          'Black',
+          'Blue'
+        ],
+        answer: 'Blue'
+      },
+      {
+        text: 'Which bird has the largest wingspan?',
+        options: [
+          'Albatross',
+          'Flamingo',
+          'Ostrich'
+        ],
+        answer: 'Albatross'
+      },
+      {
+        text: 'What are female elephants called?',
+        options: [
+          'Female Elephant',
+          'Cow',
+          'Heifer'
+        ],
+        answer: 'Cow'
+      },
     ]
+  },
+  food:{
+    {
+      text: 'Which of these is the most popular tooping on pizza?',
+      options: [
+        'Apple Slices',
+        'Pepperoni',
+        'Noodles'
+      ],
+      answer: 'Pepperoni'
+    },
+  },
+  movies:{
+
   }
 };
 var questionNumber = 1;
