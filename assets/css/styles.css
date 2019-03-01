@@ -98,7 +98,7 @@ legend {
   font-size: 28px;
   border-bottom: 3px solid black;
   box-sizing: border-box;
-  width: 60%;
+  width: 40%;
 
 }
 
@@ -177,11 +177,30 @@ Device width:
     width: 40%;
     margin-top: 6px;
   }
+}
 /* =================================
 Device width:
     768px -->   <-- 1024px
 ==================================== */
 @media (min-width: 768px) {
+  h1 {
+    width: 65%;
+    font-size: 50px;
+    border-width: 4px;
+  }
+  legend {
+    margin: 28px;
+    font-size: 36px;
+    width: 35%;
+  }
+  .start {
+    margin-top: 22px;
+    font-size: 24px;
+    border-width: 2px;
+  }
+  label {
+    font-size: 24px;
+  }
 }
 /* =================================
 Device width:
