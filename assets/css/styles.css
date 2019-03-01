@@ -21,9 +21,12 @@ h1 {
   font-size: 40px;
   padding-top: 9px;
   box-sizing: border-box;
-  width: 400px;
+  width: 85%;
   margin-left: 3%;
   margin-right: 3%;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 8px;
 }
 
 h2 {
@@ -95,8 +98,8 @@ legend {
   font-size: 28px;
   border-bottom: 3px solid black;
   box-sizing: border-box;
-  width: 200px;
-  margin: auto;
+  width: 60%;
+
 }
 
 #settings {
@@ -150,22 +153,25 @@ Device width:
 @media (max-width: 320px) {
   #overlay {
     height: 100%;
+    align-content: center;
   }
   h1 {
-    width: 90%;
-    margin: 8px auto;
-  }
+    width: 85%;
+    margin: 1px auto;
+    font-size: 36px;
+    text-align: center;
+}
   #settings label {
     margin-top: 4px;
     margin-bottom: 4px;
 }
   legend {
     width: 60%;
-    font-size: 26px;
+    font-size: 24px;
     margin: 6px;
 }
   label {
-    font-size: 18px;
+    font-size: 16px;
 }
   .start {
     width: 40%;
