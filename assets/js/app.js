@@ -61,7 +61,7 @@ var questions = {
     ],
     hard: [
       {
-        text: "What color is a giraffe's tounge?",
+        text: "What color is a giraffe's tongue?",
         options: [
           'Red',
           'Black',
@@ -90,8 +90,9 @@ var questions = {
     ]
   },
   food:{
-    {
-      text: 'Which of these is the most popular tooping on pizza?',
+    easy:[
+      {
+      text: 'Which of these is the most popular topping on pizza?',
       options: [
         'Apple Slices',
         'Pepperoni',
@@ -99,6 +100,16 @@ var questions = {
       ],
       answer: 'Pepperoni'
     },
+    {
+    text: 'Which of these is the most popular topping on pizza?',
+    options: [
+      'Apple Slices',
+      'Pepperoni',
+      'Noodles'
+    ],
+    answer: 'Pepperoni'
+  }
+  ],
   },
   movies:{
 
