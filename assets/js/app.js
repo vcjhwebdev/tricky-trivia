@@ -181,16 +181,16 @@ var questions = {
   movies:{
     easy:[
       {
-      text: 'Who is the main mermaid in "The Little Mermaid"?',
+      text: 'Who is the main mermaid in <em>"The Little Mermaid"</em>?',
       options: [
         'Aria',
         'Ariel',
         'Merida'
       ],
-      answer: 'Arial'
+      answer: 'Ariel'
     },
       {
-      text: 'In Cinderella, what did the fairy godmother turn into a carriage?',
+      text: 'In <em>Cinderella</em>, what did the fairy godmother turn into a carriage?',
       options: [
         'Pumpkin',
         'Watermelon',
@@ -199,7 +199,7 @@ var questions = {
       answer: 'Pumpkin'
     },
       {
-    text: "What did Maleficent turn in to in Disney's animated film, 'Sleeping Beauty'?",
+    text: "What did Maleficent turn in to in Disney's animated film, <em>Sleeping Beauty</em>?",
     options: [
       'Lizard',
       'Dragon',
@@ -210,7 +210,7 @@ var questions = {
   ],
     medium:[
       {
-      text: "Who is one of the good fairies in Disney's animated film, 'Sleeping Beauty'?",
+      text: "Who is one of the good fairies in Disney's animated film, <em>Sleeping Beauty</em>?",
       options: [
         'Fiora',
         'Fleur',
@@ -219,7 +219,7 @@ var questions = {
       answer: 'Flora'
     },
       {
-      text: "What is the prince's name in 'Snow White and the Seven Dwarves'?",
+      text: "What is the prince's name in <em>Snow White and the Seven Dwarves</em>?",
       options: [
         'Prince Charming',
         'Prince Florian',
@@ -257,7 +257,7 @@ var questions = {
       answer: 'Snow White and the Seven Dwarves'
     },
       {
-    text: "What is the name of the only female chef at Gusteau's restaurant in the film 'Ratatouille'?",
+    text: "What is the name of the only female chef at Gusteau's restaurant in the film <em>Ratatouille</em>?",
     options: [
       'Camille',
       'Colette',
@@ -272,8 +272,8 @@ var questions = {
 var questionNumber = 1;
 
 var overlay = document.getElementById('overlay');
-
 var settingsForm = document.getElementById('settings');
+var game = document.getElementById('game');
 
 settingsForm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -314,23 +314,53 @@ function startGame(category, difficulty) {
 
   var label = document.querySelector('.question-label');
   var text = document.querySelector('.question-text');
-  var answers = document.querySelectorAll('.answer')
+  var answers = document.querySelectorAll('.answer');
 
   //console.log(category, difficulty);
   var index = Math.floor(Math.random() * questions[category][difficulty].length);
   // choose random question object
   var question = questions[category][difficulty][index];
-  console.log(question);
+  // console.log(question);
   //console.log(label);
   //console.log(answer);
 
   // place question on the page
   label.textContent = questionNumber;
-  text.textContent = question.text;
+  text.innerHTML = question.text;
 
   for(var i = 0; i < question.options.length; i++) {
     answers[i].textContent = question.options[i]; // 'Cat' // 'Dog' // 'Lizard'
-  }
+    // if(question.options[i] == question.answer) {
+    //   answers[i].addEventListener('click', function() {
+    //     console.log('right!');
+    //     // add to score
+    //
+    //     // choose new question
+    //     startGame(category, difficulty);
+    //   });
+    // } else {
+    //   answers[i].addEventListener('click', function() {
+    //     // add to score
+    //
+    //     // choose new question
+    //     console.log('wrong!');
+    //     startGame(category, difficulty);
+    //   });
+    // }
+  } // end startGame()
+
+  game.addEventListener('click', function(e){
+    if(e.target.tagName == 'BUTTON') {
+      // check if right/wrong answer
+
+      // change score
+
+      // tell user if they were right/wrong
+
+      // choose new question
+
+    }
+  });
 
   questionNumber++;
 }
