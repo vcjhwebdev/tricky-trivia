@@ -100,18 +100,172 @@ var questions = {
       ],
       answer: 'Pepperoni'
     },
-    {
-    text: 'Which of these is the most popular topping on pizza?',
+      {
+    text: 'What food is used as the base for guacamole?',
     options: [
-      'Apple Slices',
-      'Pepperoni',
-      'Noodles'
+      'Avocado',
+      'Cherries',
+      'Broccoli'
     ],
-    answer: 'Pepperoni'
-  }
+    answer: 'Avocado'
+  },
+      {
+  text: 'What do herbivores eat?',
+  options: [
+    'Only Meat',
+    'Only Vegetables',
+    'Both Vegetables and Meat'
   ],
+  answer: 'Only Vegetables'
+}
+  ],
+    medium:[
+      {
+      text: 'What is sushi traditionally wrapped with?',
+      options: [
+        'Seaweed',
+        'Cabbage',
+        'Spinach'
+      ],
+      answer: 'Seaweed'
+    },
+      {
+    text: 'What ingredient causes bread to rise?',
+    options: [
+      'Flour',
+      'Butter',
+      'Yeast'
+    ],
+    answer: 'Yeast'
+  },
+      {
+      text: 'Foods rich in starch are know by what name?(Hint: Pasta and Bread)',
+      options: [
+        'Herbs',
+        'Carbohydrates',
+        'Calories'
+      ],
+      answer: 'Carbohydrates'
+    },
+],
+    hard:[
+      {
+      text: 'When was the blue M&M introduced?',
+      options: [
+        '1985',
+        '1995',
+        '1999'
+      ],
+      answer: '1995'
+    },
+      {
+    text: 'Which fast food restaurant was literally founded in a broom closet?',
+    options: [
+      "Papa John's",
+      'Taco Bell',
+      "Wendy's"
+    ],
+    answer: "Papa John's"
+  },
+      {
+      text: "'Beefsteak' is a variety of what?",
+      options: [
+        'Turkey',
+        'Cow Meat',
+        'Tomato'
+      ],
+      answer: 'Tomato'
+    }
+    ]
   },
   movies:{
+    easy:[
+      {
+      text: 'Who is the main mermaid in "The Little Mermaid"?',
+      options: [
+        'Aria',
+        'Ariel',
+        'Merida'
+      ],
+      answer: 'Arial'
+    },
+      {
+      text: 'In Cinderella, what did the fairy godmother turn into a carriage?',
+      options: [
+        'Pumpkin',
+        'Watermelon',
+        'Cantaloupe'
+      ],
+      answer: 'Pumpkin'
+    },
+      {
+    text: "What did Maleficent turn in to in Disney's animated film, 'Sleeping Beauty'?",
+    options: [
+      'Lizard',
+      'Dragon',
+      'Lion'
+    ],
+    answer: 'Dragon'
+  }
+  ],
+    medium:[
+      {
+      text: "Who is one of the good fairies in Disney's animated film, 'Sleeping Beauty'?",
+      options: [
+        'Fiora',
+        'Fleur',
+        'Flora'
+      ],
+      answer: 'Flora'
+    },
+      {
+      text: "What is the prince's name in 'Snow White and the Seven Dwarves'?",
+      options: [
+        'Prince Charming',
+        'Prince Florian',
+        'Prince Philip'
+      ],
+      answer: 'Prince Florian'
+    },
+      {
+    text: 'What movie are the characters Phoebus and Eseralda from?',
+    options: [
+      'The Hunchback of Noter Dame',
+      'The Black Cauldron',
+      'Alice in Wonderland'
+    ],
+    answer: 'The Hunchback of Noter Dame'
+  }
+  ],
+    hard:[
+      {
+      text: 'What is the only Disney sond to win a Grammy Award for Song of the Year?',
+      options: [
+        'A Whole New World',
+        'Under the Sea',
+        "I Can't Wait to be King"
+      ],
+      answer: 'A Whole New World'
+    },
+      {
+      text: 'Which Disney movie was the first to have a soundtrack album?',
+      options: [
+        'The Little Mermaid',
+        'Pocahontas',
+        'Snow White and the Seven Dwarves'
+      ],
+      answer: 'Snow White and the Seven Dwarves'
+    },
+      {
+    text: "What is the name of the only female chef at Gusteau's restaurant in the film 'Ratatouille'?",
+    options: [
+      'Camille',
+      'Colette',
+      'Carly'
+    ],
+    answer: 'Colette'
+  }
+    ]
 
   }
 };
