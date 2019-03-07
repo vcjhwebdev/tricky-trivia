@@ -239,7 +239,7 @@ var questions = {
   ],
     hard:[
       {
-      text: 'What is the only Disney sond to win a Grammy Award for Song of the Year?',
+      text: 'What is the only Disney song to win a Grammy Award for Song of the Year?',
       options: [
         'A Whole New World',
         'Under the Sea',
@@ -316,6 +316,20 @@ function startGame(category, difficulty) {
   var text = document.querySelector('.question-text');
   var answers = document.querySelectorAll('.answer');
 
+  // returns an array of questions
+  function generateQuestionOrder(category, difficulty) {
+    var array = [];
+    // shuffle an array
+    array.sort(() => Math.random());
+
+    // return array
+    return array;
+  }
+
+  function nextQuestion() {
+
+  }
+
   //console.log(category, difficulty);
   var index = Math.floor(Math.random() * questions[category][difficulty].length);
   // choose random question object
@@ -333,7 +347,6 @@ function startGame(category, difficulty) {
     // if(question.options[i] == question.answer) {
     //   answers[i].addEventListener('click', function() {
     //     console.log('right!');
-    //     // add to score
     //
     //     // choose new question
     //     startGame(category, difficulty);
@@ -351,11 +364,11 @@ function startGame(category, difficulty) {
 
   game.addEventListener('click', function(e){
     if(e.target.tagName == 'BUTTON') {
+      console.log(e.target);
       // check if right/wrong answer
 
-      // change score
+     // tell user if they were right/wrong
 
-      // tell user if they were right/wrong
 
       // choose new question
 
@@ -363,4 +376,4 @@ function startGame(category, difficulty) {
   });
 
   questionNumber++;
-}
+} // end startGame()
