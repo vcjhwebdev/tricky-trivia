@@ -27,7 +27,7 @@ h1 {
   margin-right: 3%;
   text-align: center;
   align-self: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -87,7 +87,7 @@ input[type=radio] {
   font-size: 16px;
   width: 40%;
   height: auto;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .start:hover {
@@ -126,7 +126,7 @@ legend {
 }
 
 #game button {
-  margin: 10px 0;
+  margin: 18px 0;
 }
 
 button {
@@ -160,9 +160,9 @@ Device width:
   h1 {
     width: 85%;
     margin: 1px auto;
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
-    border-width: 3px;
+  /*  border-width: 3px; */
 }
   #settings label {
     margin-top: 4px;
@@ -189,12 +189,18 @@ Device width:
 @media (min-width: 768px) {
   h1 {
     width: 65%;
-    font-size: 50px;
+    font-size: 52px;
     border-width: 4px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
   }
   legend {
     margin: 28px;
-    font-size: 36px;
+    font-size: 38px;
     width: 35%;
   }
   .start {
@@ -203,7 +209,10 @@ Device width:
     border-width: 2px;
   }
   label {
-    font-size: 24px;
+    font-size: 28px;
+  }
+  button {
+    font-size: 22px;
   }
 }
 /* =================================
@@ -229,6 +238,17 @@ Device width:
     font-size: 30px;
     border-width: 3px;
     margin-top: 48px;
+    border-radius: 6px;
+  }
+  h3 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  button {
+    font-size: 34px;
+    border: 3px solid black;
     border-radius: 6px;
   }
 }
