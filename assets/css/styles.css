@@ -12,7 +12,7 @@ body {
   justify-content: center;
   text-align: center;
   background: linear-gradient(to bottom, #5AD4CD, #248EBF);
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 h1 {
