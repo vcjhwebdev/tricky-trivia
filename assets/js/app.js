@@ -308,7 +308,7 @@ settingsForm.addEventListener('submit', function(event) {
   startGame(category, difficulty);
 
 });
-// question.animals
+// question.animal
 // question[category]
 function startGame(category, difficulty) {
 
@@ -318,32 +318,58 @@ function startGame(category, difficulty) {
 
   // returns an array of questions
   function generateQuestionOrder(category, difficulty) {
-    var array = [];
-    // shuffle an array
-    array.sort(() => Math.random());
+
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+
+    var array = questions[category][difficulty];
 
     // return array
-    return array;
+    return shuffle(array);
   }
 
   function nextQuestion() {
 
   }
 
-  //console.log(category, difficulty);
-  var index = Math.floor(Math.random() * questions[category][difficulty].length);
+  var questionBank = generateQuestionOrder(category, difficulty);
+
+  for(var t = 0; t < questionBank.length; t++){
+    var question = questionBank[t];
+    label.textContent = t+1;
+    text.innerHTML = question.text;
+    for(var i = 0; i < question.options.length; i++) {
+      answers[i].textContent = question.options[i];}
+  }
+
   // choose random question object
-  var question = questions[category][difficulty][index];
+  //var question = questions[category][difficulty][index];
   // console.log(question);
   //console.log(label);
   //console.log(answer);
 
   // place question on the page
-  label.textContent = questionNumber;
-  text.innerHTML = question.text;
+  //label.textContent = questionNumber;
+  //text.innerHTML = question.text;
 
-  for(var i = 0; i < question.options.length; i++) {
-    answers[i].textContent = question.options[i]; // 'Cat' // 'Dog' // 'Lizard'
+  //for(var i = 0; i < question.options.length; i++) {
+    //answers[i].textContent = question.options[i]; // 'Cat' // 'Dog' // 'Lizard'
     // if(question.options[i] == question.answer) {
     //   answers[i].addEventListener('click', function() {
     //     console.log('right!');
@@ -376,4 +402,4 @@ function startGame(category, difficulty) {
   });
 
   questionNumber++;
-} // end startGame()
+ // end startGame()
