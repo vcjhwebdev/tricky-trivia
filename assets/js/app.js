@@ -230,11 +230,11 @@ var questions = {
       {
     text: 'What movie are the characters Phoebus and Eseralda from?',
     options: [
-      'The Hunchback of Noter Dame',
+      'The Hunchback of Notre Dame',
       'The Black Cauldron',
       'Alice in Wonderland'
     ],
-    answer: 'The Hunchback of Noter Dame'
+    answer: 'The Hunchback of Notre Dame'
   }
   ],
     hard:[
@@ -408,5 +408,3 @@ function startGame(category, difficulty) {
     //   });
     // }
   } // end startGame()
-
- // end startGame()
