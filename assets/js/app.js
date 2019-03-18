@@ -269,7 +269,6 @@ var questions = {
 
   }
 };
-var questionNumber = 1;
 
 var overlay = document.getElementById('overlay');
 var settingsForm = document.getElementById('settings');
@@ -344,19 +343,41 @@ function startGame(category, difficulty) {
     return shuffle(array);
   }
 
-  function nextQuestion() {
-
+  function nextQuestion(questionIndex) {
+    var question = questionBank[questionIndex];
+    label.textContent = questionIndex + 1;
+    text.innerHTML = question.text;
+    for(var i = 0; i < question.options.length; i++) {
+      answers[i].textContent = question.options[i];
+    }
   }
 
   var questionBank = generateQuestionOrder(category, difficulty);
+  var questionIndex = 0;
+  nextQuestion(questionIndex);
 
-  for(var t = 0; t < questionBank.length; t++){
-    var question = questionBank[t];
-    label.textContent = t+1;
-    text.innerHTML = question.text;
-    for(var i = 0; i < question.options.length; i++) {
-      answers[i].textContent = question.options[i];}
-  }
+  game.addEventListener('click', function(e){
+    if(e.target.tagName == 'BUTTON') {
+      // check whether right or wrong
+      var answer = questionBank[questionIndex].answer;
+      var guess = e.target.textContent
+      if(answer == guess){
+        // TODO: tell use they got it right
+        alert('You got it!')
+      } else {
+        // TODO: tell user they got it wrong
+        alert('Sorry, you got it wrong.')
+      }
+
+      questionIndex++;
+      if(questionIndex < questionBank.length){
+        nextQuestion(questionIndex);
+      } else {
+        // out of questions
+        console.log('end');
+      }
+    }
+  });
 
   // choose random question object
   //var question = questions[category][difficulty][index];
@@ -388,18 +409,4 @@ function startGame(category, difficulty) {
     // }
   } // end startGame()
 
-  game.addEventListener('click', function(e){
-    if(e.target.tagName == 'BUTTON') {
-      console.log(e.target);
-      // check if right/wrong answer
-
-     // tell user if they were right/wrong
-
-
-      // choose new question
-
-    }
-  });
-
-  questionNumber++;
  // end startGame()
