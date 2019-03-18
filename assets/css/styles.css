@@ -45,12 +45,6 @@ h3 {
   font-size: 20px;
 }
 
-h4 {
-  font-family: fantasy;
-  font-style: normal;
-  font-size: 15px;
-}
-
 label {
   font-family: fantasy;
   cursor: pointer;
@@ -146,7 +140,6 @@ button:hover {
   content: "Question ";
 }
 
-
 /* =================================
 Device width:
     <-- 320px
@@ -179,6 +172,9 @@ Device width:
   .start {
     width: 40%;
     margin-top: 8px;
+}
+  h3 {
+    font-size: 20px;
   }
 }
 /* =================================
@@ -258,5 +254,4 @@ Device width:
   #settings {
     display: initial;
   }
-
 }
