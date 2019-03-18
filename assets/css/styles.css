@@ -12,7 +12,7 @@ body {
   justify-content: center;
   text-align: center;
   background: linear-gradient(to bottom, #5AD4CD, #248EBF);
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 h1 {
@@ -64,7 +64,6 @@ label:hover {
   background-color: white;
   color: black;
 }
-
 
 input[type=radio]:checked + label {
     background-color: white;
@@ -227,6 +226,8 @@ Device width:
   legend {
     font-size: 56px;
     border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
   }
   label {
     font-size: 38px;
@@ -239,6 +240,9 @@ Device width:
     border-width: 3px;
     margin-top: 48px;
     border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   h3 {
     font-size: 38px;
@@ -251,4 +255,8 @@ Device width:
     border: 3px solid black;
     border-radius: 6px;
   }
+  #settings {
+    display: initial;
+  }
+
 }
