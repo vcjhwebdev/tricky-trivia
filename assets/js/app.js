@@ -27,7 +27,26 @@ var questions = {
           'Duck'
         ],
         answer: 'Parrot'
-      }
+      },
+      {
+        text: "Which bear has white fur and lives in the Artic?",
+        options: [
+          'Polar Bear',
+          'Grizzly Bear',
+          'Black Bear'
+        ],
+        answer: 'Polar Bear'
+
+      },
+      {
+      text: "How do fish breathe underwater?",
+      options: [
+        'Mouth',
+        'Gills',
+        "They Don't"
+      ],
+      answer: 'Gills'
+    }
     ],
     medium: [
       {
@@ -56,8 +75,25 @@ var questions = {
           'Laughter and Trust'
         ],
         answer: 'Love and Peace'
+      },
+      {
+      text: "What do otters use to open clams?",
+      options: [
+        'Rocks',
+        'Seashells',
+        'Seaweed'
+      ],
+      answer: 'Rocks'
+    },
+      {
+        text: "Where do monarch butterflies fly in the winter?",
+        options: [
+          'West',
+          'South',
+          'East'
+        ],
+        answer: 'South'
       }
-
     ],
     hard: [
       {
@@ -87,6 +123,24 @@ var questions = {
         ],
         answer: 'Cow'
       },
+      {
+        text: "How do shark avoid orcas?",
+        options: [
+          'They Fight Them',
+          'They Swim Faster',
+          'They Swim Closer to the Ocean Floor'
+        ],
+        answer: 'They Swim Closer to the Ocean Floor'
+      },
+      {
+        text: "What is the collective noun for a group of crows?",
+        options: [
+          'Murder',
+          'Flock',
+          'Necrosis'
+        ],
+        answer: 'Murder'
+      }
     ]
   },
   food:{
@@ -117,7 +171,25 @@ var questions = {
     'Both Vegetables and Meat'
   ],
   answer: 'Only Vegetables'
-}
+},
+      {
+        text: "What do most kids eat to celebrate their birthday?",
+        options: [
+          'Pie',
+          'Cookies',
+          'Cake'
+        ],
+        answer: 'Cake'
+      },
+      {
+        text: "What is the most common meat used in hamburgers?",
+        options: [
+          'Chicken',
+          'Beef',
+          'Pork'
+        ],
+        answer: 'Beef'
+      }
   ],
     medium:[
       {
