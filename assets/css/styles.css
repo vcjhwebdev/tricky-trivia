@@ -27,7 +27,7 @@ h1 {
   margin-right: 3%;
   text-align: center;
   align-self: center;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
 }
 
 h2 {
@@ -94,7 +94,7 @@ legend {
   border-bottom: 3px solid black;
   box-sizing: border-box;
   width: 40%;
-  margin: 6px;
+  margin: 2px;
 }
 
 #settings {
@@ -154,25 +154,24 @@ Device width:
     margin: 1px auto;
     font-size: 34px;
     text-align: center;
-  /*  border-width: 3px; */
-}
+  }
   #settings label {
     margin-top: 4px;
     margin-bottom: 4px;
-}
+  }
   legend {
     width: 50%;
     font-size: 24px;
     margin: 6px;
     border-width: 2px;
-}
+  }
   label {
     font-size: 16px;
-}
+  }
   .start {
     width: 40%;
     margin-top: 8px;
-}
+  }
   h3 {
     font-size: 20px;
   }
@@ -194,17 +193,17 @@ Device width:
     font-size: 26px;
   }
   legend {
-    margin: 28px;
-    font-size: 38px;
+    margin: 10px;
+    font-size: 34px;
     width: 35%;
   }
   .start {
-    margin-top: 22px;
-    font-size: 24px;
+    margin-top: 4px;
+    font-size: 18px;
     border-width: 2px;
   }
   label {
-    font-size: 28px;
+    font-size: 20px;
   }
   button {
     font-size: 22px;
