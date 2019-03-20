@@ -368,6 +368,7 @@ function startGame(category, difficulty) {
         // TODO: tell user they got it wrong
         alert('Sorry, you got it wrong.')
       }
+      //go back to home page on last question of array
 
       questionIndex++;
       if(questionIndex < questionBank.length){
