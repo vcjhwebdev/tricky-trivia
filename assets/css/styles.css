@@ -140,6 +140,11 @@ button:hover {
   content: "Question ";
 }
 
+img {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
 /* =================================
 Device width:
     <-- 320px
