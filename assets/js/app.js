@@ -375,7 +375,8 @@ function startGame(category, difficulty) {
         nextQuestion(questionIndex);
       } else {
         // out of questions
-        console.log('end');
+        console.log('end of questions');
+        overlay.style.display = "";
       }
     }
   });
