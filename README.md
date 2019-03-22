@@ -1,19 +1,19 @@
-# APP NAME HERE
+# Tricky Trivia
 
-APP DESCRIPTION HERE
+A game to challenge yourself with different levels and categories.
 
 ## Authors
 
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
+- [Esha Reddy](https://esha-reddy.github.io/)
+- [Alicia Crotty](https://acrotty33.github.io/)
 
 ## Features
 
-- APP FEATURES HERE
+- Multiple difficulty levels
+- Multiple categories
 
 ### Changelog
 
-**Version 0.1**
+**Version 1.0**
 
-- Added Headings
+- Release
