@@ -415,6 +415,15 @@ function startGame(category, difficulty) {
     return shuffle(array);
   }
 
+  function placeModal(content) {
+    var modal = document.createElement('div');
+    var modalContent = `
+      <div class="modal-content">
+        <h1>${content}</h1>
+        <button>Continue</button>
+      </div>`;
+  }
+
   function nextQuestion(questionIndex) {
     var question = questionBank[questionIndex];
     label.textContent = questionIndex + 1;
@@ -435,7 +444,7 @@ function startGame(category, difficulty) {
       var guess = e.target.textContent
       if(answer == guess){
         // TODO: tell use they got it right
-        
+
         // Get the modal
         var modal = document.getElementById('myModal');
 
