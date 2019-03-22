@@ -419,7 +419,7 @@ function startGame(category, difficulty) {
     var modal = document.createElement('div');
     var modalContent = `
       <div class="modal-content">
-        <h1>${content}</h1>
+        <h4>${content}</h4>
         <button>Continue</button>
       </div>`;
   }
