@@ -219,6 +219,25 @@ var questions = {
       ],
       answer: 'Carbohydrates'
     },
+      {
+        text: 'Whish of these is th best source for calcium?',
+      options: [
+        'Yogurt',
+        'Chicken',
+        'Blueberries'
+      ],
+      answer: 'Yogurt'
+
+    },
+      {
+        text: "Which of these is NOT a real Ben & Jerry's ice cream flavor?",
+        options: [
+          'Chocolate Therapy',
+          'Mint Chocolate Chunk',
+          'Salted Caramel'
+        ],
+        answer: 'Salted Caramel'
+      }
 ],
     hard:[
       {
@@ -247,7 +266,25 @@ var questions = {
         'Tomato'
       ],
       answer: 'Tomato'
-    }
+    },
+      {
+        text: 'What is the the only edible food that is said to never spoil?',
+        options: [
+          'Salt',
+          'Honey',
+          'Rice'
+        ],
+        answer: 'Honey'
+      },
+      {
+        text: 'What is the top-selling cookie in the United States of America?',
+        options: [
+          'Oreos',
+          'Chips Ahoy!',
+          'Milano'
+        ],
+        answer: 'Oreos'
+      }
     ]
   },
   movies:{
@@ -278,7 +315,25 @@ var questions = {
       'Lion'
     ],
     answer: 'Dragon'
-  }
+  },
+      {
+        text: 'Which movie features Cruella de Vil as the villain',
+        options: [
+          'Sleeping Beauty',
+          'Cinderella',
+          '101 Dalmatians'
+        ],
+        answer: 'Carbohydrates'
+      },
+      {
+        text: "What is the name of Bambi's rabbit friend",
+        options: [
+          'Drummer',
+          'Thumper',
+          'Bumper'
+        ],
+        answer: 'Thumper'
+      }
   ],
     medium:[
       {
@@ -307,7 +362,25 @@ var questions = {
       'Alice in Wonderland'
     ],
     answer: 'The Hunchback of Notre Dame'
-  }
+  },
+      {
+        text: 'In Peter Pan, Does Captain Hook have his hook on his left hand or right hand?',
+        options: [
+          'Right',
+          'Left',
+          "He doesn't have a hook"
+        ],
+        answer: 'Left'
+      },
+      {
+        text: "What is the name of Donald Duck's sister?",
+        options: [
+          'Daniella',
+          'Donella',
+          'Dumbella'
+        ],
+        answer: 'Dumbella'
+      }
   ],
     hard:[
       {
@@ -336,7 +409,25 @@ var questions = {
       'Carly'
     ],
     answer: 'Colette'
-  }
+  },
+      {
+        text: 'What country was Nemo taken to in <em>Finding Nemo</em>?',
+        options: [
+          'America',
+          'England',
+          'Australia'
+        ],
+        answer: 'Australia'
+      },
+      {
+        text: "What is Alice's cat's name in <em>Alice in Wonderland</em>?",
+        options: [
+          'Bella',
+          'Dinah',
+          'Claire'
+        ],
+        answer: 'Dinah'
+      }
     ]
 
   }
@@ -379,6 +470,23 @@ settingsForm.addEventListener('submit', function(event) {
   startGame(category, difficulty);
 
 });
+// placeModal("You're right!");
+function placeModal(content) {
+  var body = document.querySelector('body');
+  var modal = document.createElement('div');
+  modal.className = 'modal';
+  var modalContent = `
+    <div class="modal-content">
+      <h1>${content}</h1>
+      <button>Continue</button>
+    </div>`;
+  modal.innerHTML = modalContent;
+  modal.querySelector('button').addEventListener('click', function() {
+    body.removeChild(modal);
+  });
+  body.insertBefore( modal, body.children[0])
+}
+
 // question.animal
 // question[category]
 function startGame(category, difficulty) {
@@ -415,15 +523,6 @@ function startGame(category, difficulty) {
     return shuffle(array);
   }
 
-  function placeModal(content) {
-    var modal = document.createElement('div');
-    var modalContent = `
-      <div class="modal-content">
-        <h1>${content}</h1>
-        <button>Continue</button>
-      </div>`;
-  }
-
   function nextQuestion(questionIndex) {
     var question = questionBank[questionIndex];
     label.textContent = questionIndex + 1;
@@ -444,37 +543,13 @@ function startGame(category, difficulty) {
       var guess = e.target.textContent
       if(answer == guess){
         // TODO: tell use they got it right
-
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-          modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
+        placeModal("You're right!");
       } else {
         // TODO: tell user they got it wrong
+        placeModal("You're wrong! It was " + answer);
       }
+          }
       //go back to home page on last question of array
-
       questionIndex++;
       if(questionIndex < questionBank.length){
         nextQuestion(questionIndex);
@@ -483,7 +558,6 @@ function startGame(category, difficulty) {
         console.log('end of questions');
         overlay.style.display = "";
       }
-    }
   });
 
   // choose random question object
