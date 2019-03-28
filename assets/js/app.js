@@ -470,26 +470,30 @@ settingsForm.addEventListener('submit', function(event) {
   startGame(category, difficulty);
 
 });
-// placeModal("You're right!");
-function placeModal(content) {
-  var body = document.querySelector('body');
-  var modal = document.createElement('div');
-  modal.className = 'modal';
-  var modalContent = `
-    <div class="modal-content">
-      <h1>${content}</h1>
-      <button>Continue</button>
-    </div>`;
-  modal.innerHTML = modalContent;
-  modal.querySelector('button').addEventListener('click', function() {
-    body.removeChild(modal);
-  });
-  body.insertBefore( modal, body.children[0])
-}
-
 // question.animal
 // question[category]
 function startGame(category, difficulty) {
+
+  function placeModal(content) {
+    console.log(questionIndex, questionBank.length);
+    var body = document.querySelector('body');
+    var modal = document.createElement('div');
+    modal.className = 'modal';
+    var modalContent = `
+      <div class="modal-content">
+        <h4>${content}</h4>
+        <button>Continue</button>
+      </div>`;
+    modal.innerHTML = modalContent;
+    modal.querySelector('button').addEventListener('click', function() {
+      body.removeChild(modal);
+      if(questionIndex == questionBank.length){
+        overlay.style.display = "";
+      }
+    });
+    body.insertBefore( modal, body.children[0])
+  }
+
 
   var label = document.querySelector('.question-label');
   var text = document.querySelector('.question-text');
@@ -555,37 +559,8 @@ function startGame(category, difficulty) {
         nextQuestion(questionIndex);
       } else {
         // out of questions
-        console.log('end of questions');
-        overlay.style.display = "";
+        // console.log('end of questions');
+        // overlay.style.display = "";
       }
   });
-
-  // choose random question object
-  //var question = questions[category][difficulty][index];
-  // console.log(question);
-  //console.log(label);
-  //console.log(answer);
-
-  // place question on the page
-  //label.textContent = questionNumber;
-  //text.innerHTML = question.text;
-
-  //for(var i = 0; i < question.options.length; i++) {
-    //answers[i].textContent = question.options[i]; // 'Cat' // 'Dog' // 'Lizard'
-    // if(question.options[i] == question.answer) {
-    //   answers[i].addEventListener('click', function() {
-    //     console.log('right!');
-    //
-    //     // choose new question
-    //     startGame(category, difficulty);
-    //   });
-    // } else {
-    //   answers[i].addEventListener('click', function() {
-    //     // add to score
-    //
-    //     // choose new question
-    //     console.log('wrong!');
-    //     startGame(category, difficulty);
-    //   });
-    // }
-  } // end startGame()
+} // end startGame()

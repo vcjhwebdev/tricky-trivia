@@ -65,10 +65,19 @@ h3 {
   font-size: 20px;
 }
 
-/*h4 {
+h4 {
+  border-style: solid;
+  border-radius: 8px;
   font-family: fantasy;
-  font-size: 26px;
-}*/
+  font-size: 40px;
+  box-sizing: border-box;
+  width: 85%;
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10px;
+}
 
 label {
   font-family: fantasy;
