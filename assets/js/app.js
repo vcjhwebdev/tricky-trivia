@@ -220,7 +220,7 @@ var questions = {
       answer: 'Carbohydrates'
     },
       {
-        text: 'Whish of these is the best source for calcium?',
+        text: 'Which of these is the best source for calcium?',
       options: [
         'Yogurt',
         'Chicken',
