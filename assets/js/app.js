@@ -550,7 +550,7 @@ function startGame(category, difficulty) {
         placeModal("You're right!");
       } else {
         // TODO: tell user they got it wrong
-        placeModal("Incorrect " + answer);
+        placeModal("Incorrect: " + answer);
       }
           }
       //go back to home page on last question of array
