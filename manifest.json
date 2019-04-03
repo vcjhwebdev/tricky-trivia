@@ -3,32 +3,32 @@
   "short_name": "Tricky Trivia",
   "icons": [
     {
-      "src": "touch-icons/touch-icon-iphone.png",
+      "src": "touch-icons/touch-icon-iphone.jpg",
       "type": "image/png",
       "sizes": "114x114"
     },
     {
-      "src": "touch-icons/touch-icon-ipad.png",
+      "src": "touch-icons/touch-icon-ipad.jpg",
       "type": "image/png",
       "sizes": "152x152"
     },
     {
-      "src": "touch-icons/touch-icon-ipad-retina.png",
+      "src": "touch-icons/touch-icon-ipad-retina.jpg",
       "type": "image/png",
       "sizes": "167x167"
     },
     {
-      "src": "touch-icons/touch-icon-iphone-retina.png",
+      "src": "touch-icons/touch-icon-iphone-retina.jpg",
       "type": "image/png",
       "sizes": "180x180"
     },
     {
-      "src": "touch-icons/touch-icon.png",
+      "src": "touch-icons/touch-icon.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "splashscreens/splash-icon.png",
+      "src": "splashscreens/splash-icon.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
