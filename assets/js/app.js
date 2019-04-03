@@ -220,7 +220,7 @@ var questions = {
       answer: 'Carbohydrates'
     },
       {
-        text: 'Whish of these is th best source for calcium?',
+        text: 'Whish of these is the best source for calcium?',
       options: [
         'Yogurt',
         'Chicken',
@@ -317,16 +317,16 @@ var questions = {
     answer: 'Dragon'
   },
       {
-        text: 'Which movie features Cruella de Vil as the villain',
+        text: 'Which movie features Cruella de Vil as the villain?',
         options: [
           'Sleeping Beauty',
           'Cinderella',
           '101 Dalmatians'
         ],
-        answer: 'Carbohydrates'
+        answer: '101 Dalmatians'
       },
       {
-        text: "What is the name of Bambi's rabbit friend",
+        text: "What is the name of Bambi's rabbit friend?",
         options: [
           'Drummer',
           'Thumper',
@@ -364,7 +364,7 @@ var questions = {
     answer: 'The Hunchback of Notre Dame'
   },
       {
-        text: 'In Peter Pan, Does Captain Hook have his hook on his left hand or right hand?',
+        text: 'In Peter Pan, does Captain Hook have his hook on his left hand or right hand?',
         options: [
           'Right',
           'Left',
