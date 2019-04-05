@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="manifest" href="manifest.json">
+<!--WEB APP-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"/>
+<!--iOS-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Tricky Trivia">
+<!--icons-->
+<link rel="apple-touch-icon" href="touch-icons/touch-icon-iphone.jpg">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icons/touch-icon-ipad.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="touch-icons/touch-icon-iphone-retina.jpg">
+<link rel="apple-touch-icon" sizes="167x167" href="touch-icons/touch-icon-ipad-retina.jpg">
+<!--Splash Screens-->
+<link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Web App Title</title>
+    <title>Tricky Trivia</title>
   </head>
   <body>
+    <div id="main-container">
+      <div id="overlay">
+        <h1>Tricky Trivia</h1>
+            <form id="settings">
+              <legend>Categories</legend>
+                  <input id="animal" type="radio" name="categories" value="animal" checked>
+                        <label for="animal">Animals</label>
+                  <input id="food" type="radio" name="categories" value="food">
+                        <label for="food">Food</label>
+                  <input id="movies" type="radio" name="categories" value="movies">
+                        <label for="movies">Disney Movies</label>
+              <legend>Levels</legend>
+                  <input id="easy" type="radio" name="animal" value="easy" checked>
+                    <label for="easy">Easy</label>
+                  <input id="medium" type="radio" name="animal" value="medium">
+                    <label for="medium">Medium</label>
+                  <input id="hard" type="radio" name="animal" value="hard">
+                    <label for="hard">Hard</label>
+                  <button class="start" type="submit">Start</button>
+            </form>
+
+      </div>
+      <div id="game">
+        <h2 class="question-label">1</h2>
+        <h3 class="question-text">What type of animal is a cheetah?</h3>
+        <button class="answer" type="submit">Cat</button>
+        <button class="answer" type="submit">Dog</button>
+        <button class="answer" type="submit">Lizard</button>
+        <a href="index.html"><img src="homebutton.png" width="60"></a>
+      </div>
+    </div>
+
+
 
     <!-- JavaScript File (loaded after the html has rendered) -->
     <script src="assets/js/app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+      	window.addEventListener('load', function() {
+        		navigator.serviceWorker.register('sw.js').then(function(registration) {
+        		// Registration was successful
+        		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        	}, function(err) {
+        		// registration failed :(
+        		console.log('ServiceWorker registration failed: ', err);
+        	});
+        });
+      }
+    </script>
   </body>
 </html>
