@@ -17,3 +17,7 @@ A game to challenge yourself with different levels and categories.
 **Version 1.0**
 
 - Release
+
+**Version 1.1**
+
+- Added more questions

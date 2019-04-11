@@ -444,13 +444,22 @@ var questions = {
         answer: 'Thumper'
       },
       {
-        text: "Which of these is a vegetable?",
+        text: "Who is Lumiere in the movie <em>Beauty and the Beast</em>?",
         options: [
-          'Tomato',
-          'Rhubard',
-          'Asparagus'
+          'A Candelabra',
+          'A Clock',
+          'A Teacup'
         ],
-        answer: 'Asparagus'
+        answer: 'A Candelabra'
+      },
+      {
+        text: "What type of animal is Bambi?",
+        options: [
+          'A Deer',
+          'A Bunny',
+          'A Lion'
+        ],
+        answer: 'A Deer'
       }
   ],
     medium:[
